@@ -1,6 +1,8 @@
 """
 This file interacts with pdb files.
 """
+import numpy as np
+
 
 def open_pdb(f_loc):
     # This function reads in a pdb file and returns the atom names and coordinates.
