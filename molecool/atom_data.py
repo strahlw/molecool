@@ -1,3 +1,7 @@
+"""
+This file contains atomic information for use in 
+creating molecular images.
+"""
 atomic_weights = {
     'H': 1.00784,
     'C': 12.0107,
