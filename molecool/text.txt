@@ -1,5 +1,5 @@
-This is a different first line.
+Add a line at the top of the file.
 
 Additional information. Now the information has been modified.
 
-This is a different bottom line.
+Add something to the bottom of the file.
