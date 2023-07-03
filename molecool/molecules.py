@@ -5,6 +5,7 @@ This is a module to create the molecules.
 import matplotlib.pyplot as plt 
 from .measure import calculate_distance
 import numpy as np
+from molecool.atom_data import atomic_weights
 
 def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
     
@@ -44,3 +45,11 @@ def bond_histogram(bond_list, save_location=None, dpi=300, graph_min=0, graph_ma
         plt.savefig(save_location, dpi=dpi)
     
     return ax
+
+def compute_molecular_mass(symbols):
+    # This function computes the molecular mass given its elemental symbols.
+    mass = 0
+    for key in symbols:
+        mass += atomic_weights[key]
+
+    return mass
